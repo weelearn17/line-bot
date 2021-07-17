@@ -39,12 +39,12 @@ def callback():
 def handle_message(event):
     msg = event.message.text
     r = '不好意思，我看不懂你說什麼QQ'
-
-    if '拜拜' in msg:
-        sticker_message = StickerSendMessage(
+    sticker_message = StickerSendMessage(
             package_id='11538',
             sticker_id='51626533'
         )
+
+    if '拜拜' in msg:
     line_bot_api.reply_message(
         event.reply_token,
         sticker_message)
