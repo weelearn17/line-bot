@@ -39,7 +39,6 @@ def callback():
 def handle_message(event):
     msg = event.message.text
     r = '不好意思，我看不懂你說什麼QQ'
-    image_message = '123'
 
     if '拜拜' in msg:
         image_message = ImageSendMessage(
