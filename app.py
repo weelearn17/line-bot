@@ -37,11 +37,21 @@ def callback():
 
 @handler.add(MessageEvent, message=TextMessage)
 def handle_message(event):
-    s = '你今天過得好嗎'
     msg = event.message.text
+    r = '不好意思，我看不懂你說什麼QQ'
+    if msg == '1':
+        r = 'https://www.facebook.com/1314journey'
+    elif msg == '2':
+        r = 'https://www.books.com.tw/products/0010847888?sloc=main'
+    elif ['hi', '哈囉', '你好', 'Hi'] in msg:
+        r = '很高興認識你！'
+    else:
+        r = '不好意思，我看不懂你的意思QQ'
+
+    
     line_bot_api.reply_message(
         event.reply_token,
-        TextSendMessage(text= s))
+        TextSendMessage(text= r))
 
 
 if __name__ == "__main__":
