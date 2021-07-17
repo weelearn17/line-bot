@@ -39,11 +39,13 @@ def callback():
 def handle_message(event):
     msg = event.message.text
     r = '不好意思，我看不懂你說什麼QQ'
-    image_message = ImageSendMessage(
-    original_content_url='https://imgur.com/3q7SqTU.png',
-    preview_image_url='https://imgur.com/3q7SqTU.png')
+    image_message = '123'
 
     if '拜拜' in msg:
+        image_message = ImageSendMessage(
+            original_content_url='https://imgur.com/3q7SqTU.png',
+            preview_image_url='https://imgur.com/3q7SqTU.png')
+
     line_bot_api.reply_message(
         event.reply_token,
         image_message
