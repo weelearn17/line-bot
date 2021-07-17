@@ -42,8 +42,8 @@ def handle_message(event):
 
     if '拜拜' in msg:
         image_message = ImageSendMessage(
-    original_content_url='https://imgur.com/3q7SqTU',
-    preview_image_url='https://imgur.com/3q7SqTU')
+    original_content_url='https://imgur.com/3q7SqTU.png',
+    preview_image_url='https://imgur.com/3q7SqTU.png')
 
     line_bot_api.reply_message(
         event.reply_token,
