@@ -45,7 +45,7 @@ def handle_message(event):
         )
 
     if '拜拜' in msg:
-    line_bot_api.reply_message(
+        line_bot_api.reply_message(
         event.reply_token,
         sticker_message)
     return
