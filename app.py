@@ -45,9 +45,11 @@ def handle_message(event):
     original_content_url='https://imgur.com/3q7SqTU',
     preview_image_url='https://imgur.com/3q7SqTU')
 
-line_bot_api.reply_message(
+    line_bot_api.reply_message(
         event.reply_token,
-        image_message)
+        image_message
+        )
+    return '有空再來~'
 
     if msg == '1':
         r = 'https://www.facebook.com/1314journey'
