@@ -57,8 +57,6 @@ def handle_message(event):
         image_message
         )
     return '有空再來~'
-
-
     else:
         r = '不好意思，我看不懂你的意思QQ'
 
