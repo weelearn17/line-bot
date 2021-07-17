@@ -43,7 +43,7 @@ def handle_message(event):
         r = 'https://www.facebook.com/1314journey'
     elif msg == '2':
         r = 'https://www.books.com.tw/products/0010847888?sloc=main'
-    elif ['hi', '哈囉', '你好', 'Hi'] in msg:
+    elif msg in ['hi', '哈囉', '你好', 'Hi']:
         r = '很高興認識你！'
     else:
         r = '不好意思，我看不懂你的意思QQ'
