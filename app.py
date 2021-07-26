@@ -48,8 +48,7 @@ def handle_message(event):
         event.reply_token,
         image_message
         )
-    return '有空再來~'
-
+        return '有空再來~'
     elif msg == '1':
         r = 'https://www.facebook.com/1314journey'
     elif msg == '2':
