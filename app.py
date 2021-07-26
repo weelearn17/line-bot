@@ -48,12 +48,14 @@ def handle_message(event):
         event.reply_token,
         image_message
         )
-        return '有空再來~'
+        print('有空再來~')
+        return 
+
     elif msg == '1':
         r = 'https://www.facebook.com/1314journey'
     elif msg == '2':
         r = 'https://www.books.com.tw/products/0010847888?sloc=main'
-    elif msg in ['hi', 'Hi' '嗨','哈囉','你好']:
+    elif msg in ['hi', 'Hi', '嗨', '哈囉', '你好']:
         r = '很高興認識你！'
     else:
         r = '不好意思，我看不懂你的意思QQ'
